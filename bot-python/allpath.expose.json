@@ -1,0 +1,17 @@
+{
+  "name": "synthetic-bot-python",
+  "version": "1.0.0-beta",
+  "language": "python",
+  "entry_point": "synthetic_bot.py",
+  "description": {"en": "Self-correcting Python runtime bot", "fr": "Bot Python auto-correcteur"},
+  "functions": [
+    {"name": "generate_function", "params": [{"name": "function_name", "type": "string"}, {"name": "purpose", "type": "string"}], "returns": {"type": "string"}},
+    {"name": "execute_with_autocorrect", "params": [{"name": "code", "type": "string"}, {"name": "max_attempts", "type": "integer"}], "returns": {"type": "object"}},
+    {"name": "get_stats", "params": [], "returns": {"type": "object"}},
+    {"name": "show_learning_report", "params": [], "returns": {"type": "string"}}
+  ],
+  "dependencies": {"runtime": ["python3>=3.12"], "packages": ["numpy>=1.20.0"]},
+  "license": "MIT",
+  "author": {"name": "Anzize Daouda", "email": "anzize.contact@proton.me"},
+  "tags": ["python", "auto-correction", "gravitational-compression", "beta"]
+}
